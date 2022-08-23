@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/js/popup.js"></script>
+    <link rel="stylesheet" href="/spectre.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>short url companion</title>
+    <style>
+      body {
+        width: 320px;
+      }
+      .copy {
+        text-align: center;
+      }
+      .toast-success {
+        margin-top: 5px;
+      }
+      .confirm-text {
+        color: rgb(71, 86, 255);
+      }
+      .alert {
+        text-align: center;
+      }
+      .confirm {
+        text-align: center;
+      }
+      .btn {
+        margin: 10px;
+      }
+      .gen-url {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <div class="toast toast-error d-hide">enter valid URL</div>
+        <div class="card-title h5">short url companion</div>
+        <div class="card-subtitle text-gray">Enter Valid URL</div>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <input class="form-input" type="text" id="myurl" />
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="loading d-hide"></div>
+        <button class="btn btn-primary gen-url" id="shortURL">
+          Generate short URL
+        </button>
+        <div class="toast toast-success d-hide"></div>
+        <!-- //////////////////////////////////////////////////////// -->
+        <div class="alert d-hide">
+          <span class="text-error"
+            >entered api key is wrong or empty, kindly go to Options and enter a
+            right api key!</span
+          >
+          <br />
+          <button class="btn alert-btn btn-error">ok</button>
+        </div>
+        <!-- ///////////////////////////////////////////////////////////////////// -->
+        <div class="confirm d-hide">
+          <span class="confirm-text"
+            ><b>short url companion</b> can still generate a shorl url with a
+            <b>rebrand</b> keyword, click <b>ok</b> to proceed! click
+            <b>cancel</b> to see further instruction!</span
+          >
+          <br />
+          <button class="btn confirmok-btn">ok</button>
+          <button class="btn confirmcancel-btn">cancel</button>
+        </div>
+        <!-- ///////////////////////////////////////////////////////////////////// -->
+        <button class="btn copy d-hide">
+          Copy <i class="fa fa-clipboard" style="font-size: 24px"></i>
+        </button>
+        <span class="text-primary d-hide"></span>
+      </div>
+    </div>
+  </body>
+</html>

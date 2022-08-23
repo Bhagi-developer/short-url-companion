@@ -1,0 +1,17 @@
+{
+  "name": "short url companion",
+  "version": "0.1",
+  "description": "Create a tiny URL",
+  "icons": {
+    "128": "images/logo.png"
+  },
+  "action": {
+    "default_popup": "html/popup.html"
+  },
+  "options_ui": {
+    "page": "html/options.html",
+    "open_in_tab": false
+  },
+  "manifest_version": 3,
+  "permissions": ["storage"]
+}
