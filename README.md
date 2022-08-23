@@ -1,7 +1,7 @@
 # short-url-companion
 a chrome extension 
 
-#How to use this extension
+# How to use this extension
 
 ![Uploading output.1(1).gif…]()
 
